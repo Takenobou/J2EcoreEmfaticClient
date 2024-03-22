@@ -1,0 +1,383 @@
+@namespace(uri="https://www.example.org/java", prefix="java")
+package javaPackage;
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class StateMachineVariableImpl {
+	op EObject eStaticClass();
+	op EObject getType();
+	op void setType(String newType);
+	op EObject getName();
+	op void setName(String newName);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String TYPE_EDEFAULT;
+	attr String type;
+	attr String NAME_EDEFAULT;
+	attr String name;
+}
+
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+class StateMachineImpl {
+	op EObject eStaticClass();
+	op EObject getDeclarations();
+	op EObject getMachineVariables();
+	op void printReachable();
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+}
+
+@Override
+@Deprecated
+class StatemachineFactoryImpl {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createStateMachine();
+	op EObject createTransition();
+	op EObject createAction();
+	op EObject createStateMachineVariable();
+	op EObject createNormalState();
+	op EObject createInitialState();
+	op EObject createFinalState();
+	op EObject getStatemachinePackage();
+	op EObject getPackage();
+}
+
+@Override
+class FinalStateImpl {
+	op EObject eStaticClass();
+}
+
+@Override
+class InitialStateImpl {
+	op EObject eStaticClass();
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class NormalStateImpl {
+	op EObject eStaticClass();
+	op EObject getEntry();
+	op EObject basicSetEntry(EObject newEntry, EObject msgs);
+	op void setEntry(EObject newEntry);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+}
+
+@Override
+class DeclarationImpl {
+	op EObject eStaticClass();
+	op void printReachable();
+}
+
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+class StateImpl extends DeclarationImpl {
+	op EObject eStaticClass();
+	op EObject getLabel();
+	op void setLabel(String newLabel);
+	op EObject getSuccessors();
+	op EObject getReachable();
+	op EObject getId();
+	op void setId(EObject newId);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String LABEL_EDEFAULT;
+	attr String label;
+	attr int ID_EDEFAULT;
+	attr int ~id;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class ActionImpl {
+	op EObject eStaticClass();
+	op EObject getActionLabel();
+	op void setActionLabel(String newActionLabel);
+	op EObject getActionStatement();
+	op void setActionStatement(String newActionStatement);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String ACTION_LABEL_EDEFAULT;
+	attr String actionLabel;
+	attr String ACTION_STATEMENT_EDEFAULT;
+	attr String actionStatement;
+}
+
+class StatemachinePackageImpl {
+	op EObject init();
+	op EObject getStateMachine();
+	op EObject getStateMachine_Declarations();
+	op EObject getStateMachine_MachineVariables();
+	op EObject getDeclaration();
+	op EObject getTransition();
+	op EObject getTransition_Label();
+	op EObject getTransition_SourceLabel();
+	op EObject getTransition_TargetLabel();
+	op EObject getTransition_Source();
+	op EObject getTransition_Target();
+	op EObject getTransition_GuardLabel();
+	op EObject getTransition_ActionLabel();
+	op EObject getTransition_GuardExpression();
+	op EObject getTransition_ActionStatement();
+	op EObject getState();
+	op EObject getState_Label();
+	op EObject getState_Successors();
+	op EObject getState_Reachable();
+	op EObject getState_Id();
+	op EObject getAction();
+	op EObject getAction_ActionLabel();
+	op EObject getAction_ActionStatement();
+	op EObject getStateMachineVariable();
+	op EObject getStateMachineVariable_Type();
+	op EObject getStateMachineVariable_Name();
+	op EObject getNormalState();
+	op EObject getNormalState_Entry();
+	op EObject getInitialState();
+	op EObject getFinalState();
+	op EObject getStatemachineFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	op void createDiagraphAnnotations();
+	op void createGmfAnnotations();
+	op void createGmf_1Annotations();
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class TransitionImpl extends DeclarationImpl {
+	op EObject eStaticClass();
+	op EObject getLabel();
+	op void setLabel(String newLabel);
+	op EObject getSourceLabel();
+	op void setSourceLabel(String newSourceLabel);
+	op EObject getTargetLabel();
+	op void setTargetLabel(String newTargetLabel);
+	op EObject getSource();
+	op EObject basicGetSource();
+	op void setSource(EObject newSource);
+	op EObject getTarget();
+	op EObject basicGetTarget();
+	op void setTarget(EObject newTarget);
+	op EObject getGuardLabel();
+	op void setGuardLabel(String newGuardLabel);
+	op EObject getActionLabel();
+	op void setActionLabel(String newActionLabel);
+	op EObject getGuardExpression();
+	op void setGuardExpression(String newGuardExpression);
+	op EObject getActionStatement();
+	op void setActionStatement(String newActionStatement);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String LABEL_EDEFAULT;
+	attr String label;
+	attr String SOURCE_LABEL_EDEFAULT;
+	attr String sourceLabel;
+	attr String TARGET_LABEL_EDEFAULT;
+	attr String targetLabel;
+	attr String GUARD_LABEL_EDEFAULT;
+	attr String guardLabel;
+	attr String ACTION_LABEL_EDEFAULT;
+	attr String actionLabel;
+	attr String GUARD_EXPRESSION_EDEFAULT;
+	attr String guardExpression;
+	attr String ACTION_STATEMENT_EDEFAULT;
+	attr String actionStatement;
+}
+
+abstract interface Transition {
+	op EObject getLabel();
+	op void setLabel(String value);
+	op EObject getSourceLabel();
+	op void setSourceLabel(String value);
+	op EObject getTargetLabel();
+	op void setTargetLabel(String value);
+	op EObject getSource();
+	op void setSource(EObject value);
+	op EObject getTarget();
+	op void setTarget(EObject value);
+	op EObject getGuardLabel();
+	op void setGuardLabel(String value);
+	op EObject getActionLabel();
+	op void setActionLabel(String value);
+	op EObject getGuardExpression();
+	op void setGuardExpression(String value);
+	op EObject getActionStatement();
+	op void setActionStatement(String value);
+}
+
+@Override
+@Override
+class StatemachineAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createStateMachineAdapter();
+	op EObject createDeclarationAdapter();
+	op EObject createTransitionAdapter();
+	op EObject createStateAdapter();
+	op EObject createActionAdapter();
+	op EObject createStateMachineVariableAdapter();
+	op EObject createNormalStateAdapter();
+	op EObject createInitialStateAdapter();
+	op EObject createFinalStateAdapter();
+	op EObject createEObjectAdapter();
+}
+
+@Override
+@Override
+@Override
+class StatemachineSwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject caseStateMachine(EObject object);
+	op EObject caseDeclaration(EObject object);
+	op EObject caseTransition(EObject object);
+	op EObject caseState(EObject object);
+	op EObject caseAction(EObject object);
+	op EObject caseStateMachineVariable(EObject object);
+	op EObject caseNormalState(EObject object);
+	op EObject caseInitialState(EObject object);
+	op EObject caseFinalState(EObject object);
+	op EObject defaultCase(EObject object);
+}
+
+abstract interface StateMachineVariable {
+	op EObject getType();
+	op void setType(String value);
+	op EObject getName();
+	op void setName(String value);
+}
+
+abstract interface FinalState {
+}
+
+abstract interface StateMachine {
+	op EObject getDeclarations();
+	op EObject getMachineVariables();
+	op void printReachable();
+}
+
+abstract interface Declaration {
+	op void printReachable();
+}
+
+abstract interface StatemachineFactory {
+	op EObject createStateMachine();
+	op EObject createTransition();
+	op EObject createAction();
+	op EObject createStateMachineVariable();
+	op EObject createNormalState();
+	op EObject createInitialState();
+	op EObject createFinalState();
+	op EObject getStatemachinePackage();
+}
+
+abstract interface StatemachinePackage {
+	op EObject getStateMachine();
+	op EObject getStateMachine_Declarations();
+	op EObject getStateMachine_MachineVariables();
+	op EObject getDeclaration();
+	op EObject getTransition();
+	op EObject getTransition_Label();
+	op EObject getTransition_SourceLabel();
+	op EObject getTransition_TargetLabel();
+	op EObject getTransition_Source();
+	op EObject getTransition_Target();
+	op EObject getTransition_GuardLabel();
+	op EObject getTransition_ActionLabel();
+	op EObject getTransition_GuardExpression();
+	op EObject getTransition_ActionStatement();
+	op EObject getState();
+	op EObject getState_Label();
+	op EObject getState_Successors();
+	op EObject getState_Reachable();
+	op EObject getState_Id();
+	op EObject getAction();
+	op EObject getAction_ActionLabel();
+	op EObject getAction_ActionStatement();
+	op EObject getStateMachineVariable();
+	op EObject getStateMachineVariable_Type();
+	op EObject getStateMachineVariable_Name();
+	op EObject getNormalState();
+	op EObject getNormalState_Entry();
+	op EObject getInitialState();
+	op EObject getFinalState();
+	op EObject getStatemachineFactory();
+}
+
+abstract interface Literals {
+}
+
+abstract interface InitialState {
+}
+
+abstract interface Action {
+	op EObject getActionLabel();
+	op void setActionLabel(String value);
+	op EObject getActionStatement();
+	op void setActionStatement(String value);
+}
+
+abstract interface State extends Declaration {
+	op EObject getLabel();
+	op void setLabel(String value);
+	op EObject getSuccessors();
+	op EObject getReachable();
+	op EObject getId();
+	op void setId(EObject value);
+	op void printReachable();
+}
+
+abstract interface NormalState extends State {
+	op EObject getEntry();
+	op void setEntry(EObject value);
+}
+

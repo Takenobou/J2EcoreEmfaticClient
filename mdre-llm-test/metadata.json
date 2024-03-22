@@ -1,0 +1,72 @@
+{
+  "relationalMetaModel": {
+    "vjava": "relationalMetaModel/src/vjava",
+    "ecore": "relationalMetaModel/model/relationalMetaModel.ecore",
+    "vclass": "relationalMetaModel/src/vclass",
+    "emf": "relationalMetaModel/model/relationalMetaModel.emf",
+    "vemf": "relationalMetaModel/src/vemf"
+  },
+  "argumentation": {
+    "vjava": "argumentation/src/vjava",
+    "ecore": "argumentation/model/argumentation.ecore",
+    "vclass": "argumentation/src/vclass",
+    "emf": "argumentation/model/argumentation.emf",
+    "vemf": "argumentation/src/vemf"
+  },
+  "petrinet": {
+    "vjava": "petrinet/src/vjava",
+    "ecore": "petrinet/model/petrinet.ecore",
+    "vclass": "petrinet/src/vclass",
+    "emf": "petrinet/model/petrinet.emf",
+    "vemf": "petrinet/src/vemf"
+  },
+  "petri_nets": {
+    "vjava": "petri_nets/src/vjava",
+    "ecore": "petri_nets/model/petri_nets.ecore",
+    "vclass": "petri_nets/src/vclass",
+    "emf": "petri_nets/model/petri_nets.emf",
+    "vemf": "petri_nets/src/vemf"
+  },
+  "ptnetLoLA": {
+    "vjava": "ptnetLoLA/src/vjava",
+    "ecore": "ptnetLoLA/model/ptnetLoLA.ecore",
+    "vclass": "ptnetLoLA/src/vclass",
+    "emf": "ptnetLoLA/model/ptnetLoLA.emf",
+    "vemf": "ptnetLoLA/src/vemf"
+  },
+  "Courses": {
+    "vjava": "Courses/src/vjava",
+    "ecore": "Courses/model/Courses.ecore",
+    "vclass": "Courses/src/vclass",
+    "emf": "Courses/model/Courses.emf",
+    "vemf": "Courses/src/vemf"
+  },
+  "statemachine": {
+    "vjava": "statemachine/src/vjava",
+    "ecore": "statemachine/model/statemachine.ecore",
+    "vclass": "statemachine/src/vclass",
+    "emf": "statemachine/model/statemachine.emf",
+    "vemf": "statemachine/src/vemf"
+  },
+  "AttrTest": {
+    "vjava": "AttrTest/src/vjava",
+    "ecore": "AttrTest/model/AttrTest.ecore",
+    "vclass": "AttrTest/src/vclass",
+    "emf": "AttrTest/model/AttrTest.emf",
+    "vemf": "AttrTest/src/vemf"
+  },
+  "Enumerations": {
+    "vjava": "Enumerations/src/vjava",
+    "ecore": "Enumerations/model/Enumerations.ecore",
+    "vclass": "Enumerations/src/vclass",
+    "emf": "Enumerations/model/Enumerations.emf",
+    "vemf": "Enumerations/src/vemf"
+  },
+  "Bug362620": {
+    "vjava": "Bug362620/src/vjava",
+    "ecore": "Bug362620/model/Bug362620.ecore",
+    "vclass": "Bug362620/src/vclass",
+    "emf": "Bug362620/model/Bug362620.emf",
+    "vemf": "Bug362620/src/vemf"
+  }
+}

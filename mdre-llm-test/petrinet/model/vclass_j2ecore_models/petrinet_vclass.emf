@@ -1,0 +1,210 @@
+@namespace(uri="https://www.example.org/java", prefix="java")
+package javaPackage;
+
+@Override
+class Transition {
+	op EObject eStaticClass();
+}
+
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+class Node {
+	op EObject eStaticClass();
+	op EObject getName();
+	op void setName(String newName);
+	op EObject getIn();
+	op EObject getOut();
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String NAME_EDEFAULT;
+	attr String name;
+}
+
+@Override
+@Override
+@Override
+class PetrinetSwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject casePetrinet(EObject object);
+	op EObject caseNode(EObject object);
+	op EObject caseArc(EObject object);
+	op EObject caseTransition(EObject object);
+	op EObject casePlace(EObject object);
+	op EObject caseToken(EObject object);
+	op EObject defaultCase(EObject object);
+}
+
+@Override
+@Override
+class PetrinetAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createPetrinetAdapter();
+	op EObject createNodeAdapter();
+	op EObject createArcAdapter();
+	op EObject createTransitionAdapter();
+	op EObject createPlaceAdapter();
+	op EObject createTokenAdapter();
+	op EObject createEObjectAdapter();
+}
+
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+class Place extends Node {
+	op EObject eStaticClass();
+	op EObject getTokens();
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class Arc {
+	op EObject eStaticClass();
+	op EObject getSource();
+	op EObject basicGetSource();
+	op void setSource(EObject newSource);
+	op EObject getTarget();
+	op EObject basicGetTarget();
+	op EObject basicSetTarget(EObject newTarget, EObject msgs);
+	op void setTarget(EObject newTarget);
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	val Node[*] source;
+	val Node[*] target;
+}
+
+@Override
+@Deprecated
+class PetrinetFactory {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createPetrinet();
+	op EObject createArc();
+	op EObject createTransition();
+	op EObject createPlace();
+	op EObject createToken();
+	op EObject getPetrinetPackage();
+	op EObject getPackage();
+	val PetrinetFactory[*] eINSTANCE;
+}
+
+class PetrinetPackage {
+	op EObject init();
+	op EObject getPetrinet();
+	op EObject getPetrinet_Name();
+	op EObject getPetrinet_Nodes();
+	op EObject getPetrinet_Arcs();
+	op EObject getNode();
+	op EObject getNode_Name();
+	op EObject getNode_In();
+	op EObject getNode_Out();
+	op EObject getArc();
+	op EObject getArc_Source();
+	op EObject getArc_Target();
+	op EObject getTransition();
+	op EObject getPlace();
+	op EObject getPlace_Tokens();
+	op EObject getToken();
+	op EObject getPetrinetFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	attr String eNAME;
+	attr String eNS_URI;
+	attr String eNS_PREFIX;
+	attr int PETRINET;
+	attr int PETRINET__NAME;
+	attr int PETRINET__NODES;
+	attr int PETRINET__ARCS;
+	attr int PETRINET_FEATURE_COUNT;
+	attr int NODE;
+	attr int NODE__NAME;
+	attr int NODE__IN;
+	attr int NODE__OUT;
+	attr int NODE_FEATURE_COUNT;
+	attr int ARC;
+	attr int ARC__SOURCE;
+	attr int ARC__TARGET;
+	attr int ARC_FEATURE_COUNT;
+	attr int TRANSITION;
+	attr int TRANSITION__NAME;
+	attr int TRANSITION__IN;
+	attr int TRANSITION__OUT;
+	attr int TRANSITION_FEATURE_COUNT;
+	attr int PLACE;
+	attr int PLACE__NAME;
+	attr int PLACE__IN;
+	attr int PLACE__OUT;
+	attr int PLACE__TOKENS;
+	attr int PLACE_FEATURE_COUNT;
+	attr int TOKEN;
+	attr int TOKEN_FEATURE_COUNT;
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+	val PetrinetPackage[*] eINSTANCE;
+}
+
+abstract interface Literals {
+}
+
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+class Petrinet {
+	op EObject eStaticClass();
+	op EObject getName();
+	op void setName(String newName);
+	op EObject getNodes();
+	op EObject getArcs();
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String NAME_EDEFAULT;
+	attr String name;
+}
+
+@Override
+class Token {
+	op EObject eStaticClass();
+}
+

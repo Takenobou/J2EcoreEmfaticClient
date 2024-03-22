@@ -1,0 +1,554 @@
+@namespace(uri="https://www.example.org/java", prefix="java")
+package javaPackage;
+
+class PtnetLoLAPackage {
+	op EObject init();
+	op EObject getPlace();
+	op EObject getPlace_Token();
+	op EObject getPlace_FinalMarking();
+	op EObject getPtNet();
+	op EObject getPtNet_Places();
+	op EObject getPtNet_Transitions();
+	op EObject getPtNet_InitialMarking();
+	op EObject getPtNet_Annotation();
+	op EObject getPtNet_Arcs();
+	op EObject getPtNet_FinalMarking();
+	op EObject getTransition();
+	op EObject getNode();
+	op EObject getNode_Name();
+	op EObject getNode_Annotation();
+	op EObject getNode_Incoming();
+	op EObject getNode_Outgoing();
+	op EObject getNode_Type();
+	op EObject getMarking();
+	op EObject getMarking_Places();
+	op EObject getPlaceReference();
+	op EObject getPlaceReference_Place();
+	op EObject getRefMarkedPlace();
+	op EObject getRefMarkedPlace_Token();
+	op EObject getAnnotation();
+	op EObject getAnnotation_Text();
+	op EObject getArc();
+	op EObject getArc_Source();
+	op EObject getArc_Target();
+	op EObject getArc_Weight();
+	op EObject getArcToPlace();
+	op EObject getArcToTransition();
+	op EObject getTransitionExt();
+	op EObject getTransitionExt_Probability();
+	op EObject getTransitionExt_MinTime();
+	op EObject getTransitionExt_Cost();
+	op EObject getTransitionExt_MaxTime();
+	op EObject getTransitionExt_Confidentiality();
+	op EObject getPlaceExt();
+	op EObject getPlaceExt_Probability();
+	op EObject getPlaceExt_IsStart();
+	op EObject getArcToPlaceExt();
+	op EObject getArcToPlaceExt_Probability();
+	op EObject getArcToTransitionExt();
+	op EObject getArcToTransitionExt_Probability();
+	op EObject getNodeType();
+	op EObject getConfidentiality();
+	op EObject getPtnetLoLAFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	attr String eNAME;
+	attr String eNS_URI;
+	attr String eNS_PREFIX;
+	attr int NODE;
+	attr int NODE__NAME;
+	attr int NODE__ANNOTATION;
+	attr int NODE__INCOMING;
+	attr int NODE__OUTGOING;
+	attr int NODE__TYPE;
+	attr int NODE_FEATURE_COUNT;
+	attr int PLACE;
+	attr int PLACE__NAME;
+	attr int PLACE__ANNOTATION;
+	attr int PLACE__INCOMING;
+	attr int PLACE__OUTGOING;
+	attr int PLACE__TYPE;
+	attr int PLACE__TOKEN;
+	attr int PLACE__FINAL_MARKING;
+	attr int PLACE_FEATURE_COUNT;
+	attr int PT_NET;
+	attr int PT_NET__PLACES;
+	attr int PT_NET__TRANSITIONS;
+	attr int PT_NET__INITIAL_MARKING;
+	attr int PT_NET__ANNOTATION;
+	attr int PT_NET__ARCS;
+	attr int PT_NET__FINAL_MARKING;
+	attr int PT_NET_FEATURE_COUNT;
+	attr int TRANSITION;
+	attr int TRANSITION__NAME;
+	attr int TRANSITION__ANNOTATION;
+	attr int TRANSITION__INCOMING;
+	attr int TRANSITION__OUTGOING;
+	attr int TRANSITION__TYPE;
+	attr int TRANSITION_FEATURE_COUNT;
+	attr int MARKING;
+	attr int MARKING__PLACES;
+	attr int MARKING_FEATURE_COUNT;
+	attr int PLACE_REFERENCE;
+	attr int PLACE_REFERENCE__PLACE;
+	attr int PLACE_REFERENCE_FEATURE_COUNT;
+	attr int REF_MARKED_PLACE;
+	attr int REF_MARKED_PLACE__PLACE;
+	attr int REF_MARKED_PLACE__TOKEN;
+	attr int REF_MARKED_PLACE_FEATURE_COUNT;
+	attr int ANNOTATION;
+	attr int ANNOTATION__TEXT;
+	attr int ANNOTATION_FEATURE_COUNT;
+	attr int ARC;
+	attr int ARC__SOURCE;
+	attr int ARC__TARGET;
+	attr int ARC__WEIGHT;
+	attr int ARC_FEATURE_COUNT;
+	attr int ARC_TO_PLACE;
+	attr int ARC_TO_PLACE__SOURCE;
+	attr int ARC_TO_PLACE__TARGET;
+	attr int ARC_TO_PLACE__WEIGHT;
+	attr int ARC_TO_PLACE_FEATURE_COUNT;
+	attr int ARC_TO_TRANSITION;
+	attr int ARC_TO_TRANSITION__SOURCE;
+	attr int ARC_TO_TRANSITION__TARGET;
+	attr int ARC_TO_TRANSITION__WEIGHT;
+	attr int ARC_TO_TRANSITION_FEATURE_COUNT;
+	attr int TRANSITION_EXT;
+	attr int TRANSITION_EXT__NAME;
+	attr int TRANSITION_EXT__ANNOTATION;
+	attr int TRANSITION_EXT__INCOMING;
+	attr int TRANSITION_EXT__OUTGOING;
+	attr int TRANSITION_EXT__TYPE;
+	attr int TRANSITION_EXT__PROBABILITY;
+	attr int TRANSITION_EXT__MIN_TIME;
+	attr int TRANSITION_EXT__COST;
+	attr int TRANSITION_EXT__MAX_TIME;
+	attr int TRANSITION_EXT__CONFIDENTIALITY;
+	attr int TRANSITION_EXT_FEATURE_COUNT;
+	attr int PLACE_EXT;
+	attr int PLACE_EXT__NAME;
+	attr int PLACE_EXT__ANNOTATION;
+	attr int PLACE_EXT__INCOMING;
+	attr int PLACE_EXT__OUTGOING;
+	attr int PLACE_EXT__TYPE;
+	attr int PLACE_EXT__TOKEN;
+	attr int PLACE_EXT__FINAL_MARKING;
+	attr int PLACE_EXT__PROBABILITY;
+	attr int PLACE_EXT__IS_START;
+	attr int PLACE_EXT_FEATURE_COUNT;
+	attr int ARC_TO_PLACE_EXT;
+	attr int ARC_TO_PLACE_EXT__SOURCE;
+	attr int ARC_TO_PLACE_EXT__TARGET;
+	attr int ARC_TO_PLACE_EXT__WEIGHT;
+	attr int ARC_TO_PLACE_EXT__PROBABILITY;
+	attr int ARC_TO_PLACE_EXT_FEATURE_COUNT;
+	attr int ARC_TO_TRANSITION_EXT;
+	attr int ARC_TO_TRANSITION_EXT__SOURCE;
+	attr int ARC_TO_TRANSITION_EXT__TARGET;
+	attr int ARC_TO_TRANSITION_EXT__WEIGHT;
+	attr int ARC_TO_TRANSITION_EXT__PROBABILITY;
+	attr int ARC_TO_TRANSITION_EXT_FEATURE_COUNT;
+	attr int NODE_TYPE;
+	attr int CONFIDENTIALITY;
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+	val PtnetLoLAPackage[*] eINSTANCE;
+}
+
+abstract interface Literals {
+}
+
+@Override
+@Override
+@Override
+@Deprecated
+class PtnetLoLAFactory {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createFromString(EObject eDataType, String initialValue);
+	op EObject convertToString(EObject eDataType, EObject instanceValue);
+	op EObject createPlace();
+	op EObject createPtNet();
+	op EObject createTransition();
+	op EObject createNode();
+	op EObject createMarking();
+	op EObject createPlaceReference();
+	op EObject createRefMarkedPlace();
+	op EObject createAnnotation();
+	op EObject createArc();
+	op EObject createArcToPlace();
+	op EObject createArcToTransition();
+	op EObject createTransitionExt();
+	op EObject createPlaceExt();
+	op EObject createArcToPlaceExt();
+	op EObject createArcToTransitionExt();
+	op EObject createNodeTypeFromString(EObject eDataType, String initialValue);
+	op EObject convertNodeTypeToString(EObject eDataType, EObject instanceValue);
+	op EObject createConfidentialityFromString(EObject eDataType, String initialValue);
+	op EObject convertConfidentialityToString(EObject eDataType, EObject instanceValue);
+	op EObject getPtnetLoLAPackage();
+	op EObject getPackage();
+	val PtnetLoLAFactory[*] eINSTANCE;
+}
+
+@Override
+class Transition {
+	op EObject eStaticClass();
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class ArcToPlaceExt {
+	op EObject eStaticClass();
+	op EObject getProbability();
+	op void setProbability(EObject newProbability);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr double PROBABILITY_EDEFAULT;
+	attr double probability;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class TransitionExt extends Transition {
+	op EObject eStaticClass();
+	op EObject getProbability();
+	op void setProbability(EObject newProbability);
+	op EObject getMinTime();
+	op void setMinTime(EObject newMinTime);
+	op EObject getCost();
+	op void setCost(EObject newCost);
+	op EObject getMaxTime();
+	op void setMaxTime(EObject newMaxTime);
+	op EObject getConfidentiality();
+	op void setConfidentiality(EObject newConfidentiality);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr double PROBABILITY_EDEFAULT;
+	attr double probability;
+	attr int MIN_TIME_EDEFAULT;
+	attr int minTime;
+	attr double COST_EDEFAULT;
+	attr double cost;
+	attr int MAX_TIME_EDEFAULT;
+	attr int maxTime;
+}
+
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class Node {
+	op EObject eStaticClass();
+	op EObject getName();
+	op void setName(String newName);
+	op EObject getAnnotation();
+	op EObject basicSetAnnotation(EObject newAnnotation, EObject msgs);
+	op void setAnnotation(EObject newAnnotation);
+	op EObject getIncoming();
+	op EObject getOutgoing();
+	op EObject getType();
+	op void setType(EObject newType);
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String NAME_EDEFAULT;
+	attr String name;
+}
+
+@Override
+class ArcToTransition {
+	op EObject eStaticClass();
+}
+
+@Override
+@Override
+class PtnetLoLAAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createPlaceAdapter();
+	op EObject createPtNetAdapter();
+	op EObject createTransitionAdapter();
+	op EObject createNodeAdapter();
+	op EObject createMarkingAdapter();
+	op EObject createPlaceReferenceAdapter();
+	op EObject createRefMarkedPlaceAdapter();
+	op EObject createAnnotationAdapter();
+	op EObject createArcAdapter();
+	op EObject createArcToPlaceAdapter();
+	op EObject createArcToTransitionAdapter();
+	op EObject createTransitionExtAdapter();
+	op EObject createPlaceExtAdapter();
+	op EObject createArcToPlaceExtAdapter();
+	op EObject createArcToTransitionExtAdapter();
+	op EObject createEObjectAdapter();
+	val PtnetLoLAPackage[*] modelPackage;
+}
+
+@Override
+@Override
+@Override
+class PtnetLoLASwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject casePlace(EObject object);
+	op EObject casePtNet(EObject object);
+	op EObject caseTransition(EObject object);
+	op EObject caseNode(EObject object);
+	op EObject caseMarking(EObject object);
+	op EObject casePlaceReference(EObject object);
+	op EObject caseRefMarkedPlace(EObject object);
+	op EObject caseAnnotation(EObject object);
+	op EObject caseArc(EObject object);
+	op EObject caseArcToPlace(EObject object);
+	op EObject caseArcToTransition(EObject object);
+	op EObject caseTransitionExt(EObject object);
+	op EObject casePlaceExt(EObject object);
+	op EObject caseArcToPlaceExt(EObject object);
+	op EObject caseArcToTransitionExt(EObject object);
+	op EObject defaultCase(EObject object);
+	val PtnetLoLAPackage[*] modelPackage;
+}
+
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+class Marking {
+	op EObject eStaticClass();
+	op EObject getPlaces();
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class Place extends Node {
+	op EObject eStaticClass();
+	op EObject getToken();
+	op void setToken(EObject newToken);
+	op EObject getFinalMarking();
+	op void setFinalMarking(EObject newFinalMarking);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int TOKEN_EDEFAULT;
+	attr int token;
+	attr int FINAL_MARKING_EDEFAULT;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+class PlaceReference {
+	op EObject eStaticClass();
+	op EObject getPlace();
+	op EObject basicGetPlace();
+	op void setPlace(EObject newPlace);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	val Place[*] place;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class ArcToTransitionExt extends ArcToTransition {
+	op EObject eStaticClass();
+	op EObject getProbability();
+	op void setProbability(EObject newProbability);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr double PROBABILITY_EDEFAULT;
+	attr double probability;
+}
+
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+class PtNet {
+	op EObject eStaticClass();
+	op EObject getPlaces();
+	op EObject getTransitions();
+	op EObject getInitialMarking();
+	op EObject basicSetInitialMarking(EObject newInitialMarking, EObject msgs);
+	op void setInitialMarking(EObject newInitialMarking);
+	op EObject getAnnotation();
+	op EObject basicSetAnnotation(EObject newAnnotation, EObject msgs);
+	op void setAnnotation(EObject newAnnotation);
+	op EObject getArcs();
+	op EObject getFinalMarking();
+	op EObject basicSetFinalMarking(EObject newFinalMarking, EObject msgs);
+	op void setFinalMarking(EObject newFinalMarking);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	val Marking[*] initialMarking;
+	val Marking[*] finalMarking;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class Arc {
+	op EObject eStaticClass();
+	op EObject getSource();
+	op EObject basicGetSource();
+	op EObject basicSetSource(EObject newSource, EObject msgs);
+	op void setSource(EObject newSource);
+	op EObject getTarget();
+	op EObject basicGetTarget();
+	op EObject basicSetTarget(EObject newTarget, EObject msgs);
+	op void setTarget(EObject newTarget);
+	op EObject getWeight();
+	op void setWeight(EObject newWeight);
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int WEIGHT_EDEFAULT;
+	attr int weight;
+	val Node[*] source;
+	val Node[*] target;
+}
+
+@Override
+class ArcToPlace extends Arc {
+	op EObject eStaticClass();
+}
+
+enum Confidentiality {
+	UNKNOWN = 0;
+	LOW = 1;
+	HIGH = 2;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class PlaceExt extends Place {
+	op EObject eStaticClass();
+	op EObject getProbability();
+	op void setProbability(EObject newProbability);
+	op EObject isIsStart();
+	op void setIsStart(EObject newIsStart);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr double PROBABILITY_EDEFAULT;
+	attr double probability;
+	attr boolean IS_START_EDEFAULT;
+	attr boolean isStart;
+}
+
+enum NodeType {
+	INTERNAL = 0;
+	INPUT = 1;
+	OUTPUT = 2;
+	INOUT = 3;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class RefMarkedPlace extends PlaceReference {
+	op EObject eStaticClass();
+	op EObject getToken();
+	op void setToken(EObject newToken);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int TOKEN_EDEFAULT;
+	attr int token;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class Annotation {
+	op EObject eStaticClass();
+	op EObject getText();
+	op void setText(String newText);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String TEXT_EDEFAULT;
+	attr String text;
+}
+

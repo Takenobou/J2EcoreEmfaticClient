@@ -1,0 +1,36 @@
+@namespace(uri="http://www.kcl.ac.uk/mdeo/argumentation/1.0", prefix="argumentation")
+package argumentation;
+
+class ArgumentationFramework {
+	val PersuadeeArgumentationFramework[+] persuadeeArgumentationFramework;
+	val Persuader[1]#hasArgumentationFramework hasPersuader;
+	attr int ID;
+	val Argument[+] hasArgument;
+	ref Argument hasTopic;
+}
+
+class Persuader {
+	ref ArgumentationFramework[1]#hasPersuader hasArgumentationFramework;
+	attr int ID;
+	ref Argument[*] putsForward;
+}
+
+class Argument {
+	ref Argument[*] attacks;
+	attr int ID;
+	ref PersuadeeArgumentationFramework#absorbsArgument assertArgument;
+	attr String name;
+}
+
+class Persuadee {
+	ref PersuadeeArgumentationFramework[1]#hasPersuadee hasPersuadeeArgumentationFramework;
+	attr int ID;
+}
+
+class PersuadeeArgumentationFramework {
+	ref Argument[+] hasArgument;
+	val Persuadee[1]#hasPersuadeeArgumentationFramework hasPersuadee;
+	attr int ID;
+	ref Argument[*]#assertArgument absorbsArgument;
+}
+

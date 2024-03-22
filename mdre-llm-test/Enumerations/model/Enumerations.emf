@@ -1,0 +1,51 @@
+@namespace(uri="http://www.opendds.org/modeling/schemas/Enumerations/1.0", prefix="enumerations")
+package enumerations;
+
+enum ReliabilityQosPolicyKind {
+	BEST_EFFORT = 0;
+	RELIABLE = 1;
+}
+
+enum PresentationQosPolicyAccessScopeKind {
+	INSTANCE = 0;
+	TOPIC = 1;
+	GROUP = 2;
+}
+
+class Period {
+
+	@GenModel(documentation="ELong closest to CORBA unsigned long used in DDS spec.")
+	attr long nanosecond;
+
+	@GenModel(documentation="EInt corresponds to CORBA long used in DDS spec.")
+	attr int second;
+}
+
+enum OwnershipQosPolicyKind {
+	SHARED = 0;
+	EXCLUSIVE = 1;
+}
+
+enum LivelinessQosPolicyKind {
+	AUTOMATIC = 0;
+	MANUAL_BY_PARTICIPANT = 1;
+	MANUAL_BY_TOPIC = 2;
+}
+
+enum DurabilityQosPolicyKind {
+	TRANSIENT = 0;
+	TRANSIENT_LOCAL = 1;
+	VOLATILE = 2;
+	PERSISTENT = 3;
+}
+
+enum DestinationOrderQosPolicyKind {
+	BY_RECEPTION_TIMESTAMP = 0;
+	BY_SOURCE_TIMESTAMP = 1;
+}
+
+enum HistoryQosPolicyKind {
+	KEEP_LAST = 0;
+	KEEP_ALL = 1;
+}
+

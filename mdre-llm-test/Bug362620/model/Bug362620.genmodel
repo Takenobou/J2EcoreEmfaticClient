@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="output/Bug362620//src" modelPluginID="output" modelName="Bug362620" copyrightFields="false">
+  <foreignModel>Bug362620.ecore</foreignModel>
+  <genPackages prefix="Main" disposableProviderFactory="true">
+    <ecorePackage href="Bug362620.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="Bug362620.ecore#//M"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="Bug362620.ecore#//M/p"/>
+      </genFeatures>
+    </genClasses>
+    <nestedGenPackages prefix="Sub" disposableProviderFactory="true">
+      <ecorePackage href="Bug362620.ecore#//sub"/>
+      <nestedGenPackages prefix="Subsub" disposableProviderFactory="true">
+        <ecorePackage href="Bug362620.ecore#//sub/subsub"/>
+        <genClasses>
+          <ecoreClass href="Bug362620.ecore#//sub/subsub/SSC"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

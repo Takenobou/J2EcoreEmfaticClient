@@ -1,0 +1,74 @@
+@"http://www.modelwriter.eu/alloyinecore/import"(Ecore="http://www.eclipse.org/emf/2002/Ecore")
+@namespace(uri="www.testpackage.org", prefix="tp")
+package TestPackage;
+
+@"http://www.modelwriter.eu/alloyinecore/visibility"(visibility="private")
+class TestClass extends SuperClass, UberClass : TCname {
+
+	@"http://www.modelwriter.eu/alloyinecore/visibility"(visibility="private")
+	@"http://www.modelwriter.eu/alloyinecore/expression/derivation"(expression="~testAttr")
+	@"http://www.modelwriter.eu/alloyinecore/static"
+	@"http://www.modelwriter.eu/alloyinecore/model"
+	!ordered readonly volatile transient unsettable derived id attr EDate[1] testAttr = "2017-01-01";
+
+	@"http://www.modelwriter.eu/alloyinecore/model"
+	!ordered attr String testStringAttr = "";
+
+	@"http://www.modelwriter.eu/alloyinecore/ghost"
+	!ordered attr EBigDecimal testRealAttr = "0.0";
+	!ordered volatile transient attr boolean testBooleanAttr = false;
+
+	@"http://www.modelwriter.eu/alloyinecore/visibility"(visibility="private")
+	!ordered transient attr int testIntAttr = 1;
+	!ordered attr int[1] testAttr1 = 1;
+	attr int[+] testAttr2 = 1;
+	attr int[*] testAttr3 = 1;
+	attr int[2..5] testAttr4 = 1;
+	!ordered attr int testAttr5 = 1;
+	!ordered attr EBigInteger testUnlimitedNaturalAttr = "1";
+
+	@"http://www.modelwriter.eu/alloyinecore/nullable"
+	attr int[*] testAttr6 = 1;
+
+	@"http://www.modelwriter.eu/alloyinecore/nullable"
+	attr int[+] testAttr7 = 1;
+
+	@"http://www.modelwriter.eu/alloyinecore/nullable"
+	attr int[2..5] testAttr8 = 1;
+}
+
+abstract interface TestInterface extends SuperClass : TIname {
+}
+
+enum TestEnum {
+}
+
+@"http://www.modelwriter.eu/alloyinecore/datatype/primitive"
+transient datatype TestDataType : TDTname;
+
+abstract class SuperClass {
+}
+
+abstract class UberClass {
+}
+
+@namespace(uri="www.sub.testpackage.org", prefix="sp")
+package SubPackage {
+	class SubTestClass {
+		!ordered attr int testIntAttr = 0;
+		!ordered attr String testStringAttr = "";
+		!ordered attr EBigDecimal testRealAttr = "0";
+		!ordered volatile transient attr boolean testBooleanAttr = false;
+		!ordered transient attr EDate testAttr = "2016-09-09";
+	}
+
+	abstract interface SubTestInterface {
+	}
+
+	enum SubTestEnum {
+	}
+
+	datatype SubTestDataType : STDTname;
+
+}
+

@@ -1,0 +1,152 @@
+@namespace(uri="https://www.example.org/java", prefix="java")
+package javaPackage;
+
+enum ReliabilityQosPolicyKind {
+	BEST_EFFORT = 0;
+	RELIABLE = 1;
+}
+
+enum DurabilityQosPolicyKind {
+	TRANSIENT = 0;
+	TRANSIENT_LOCAL = 1;
+	VOLATILE = 2;
+	PERSISTENT = 3;
+}
+
+@Override
+@Override
+@Override
+class EnumerationsSwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject casePeriod(EObject object);
+	op EObject defaultCase(EObject object);
+}
+
+@Override
+@Override
+class EnumerationsAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createPeriodAdapter();
+	op EObject createEObjectAdapter();
+}
+
+enum DestinationOrderQosPolicyKind {
+	BY_RECEPTION_TIMESTAMP = 0;
+	BY_SOURCE_TIMESTAMP = 1;
+}
+
+enum PresentationQosPolicyAccessScopeKind {
+	INSTANCE = 0;
+	TOPIC = 1;
+	GROUP = 2;
+}
+
+enum LivelinessQosPolicyKind {
+	AUTOMATIC = 0;
+	MANUAL_BY_PARTICIPANT = 1;
+	MANUAL_BY_TOPIC = 2;
+}
+
+@Override
+@Override
+@Override
+@Deprecated
+class EnumerationsFactory {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createFromString(EObject eDataType, String initialValue);
+	op EObject convertToString(EObject eDataType, EObject instanceValue);
+	op EObject createPeriod();
+	op EObject createReliabilityQosPolicyKindFromString(EObject eDataType, String initialValue);
+	op EObject convertReliabilityQosPolicyKindToString(EObject eDataType, EObject instanceValue);
+	op EObject createPresentationQosPolicyAccessScopeKindFromString(EObject eDataType, String initialValue);
+	op EObject convertPresentationQosPolicyAccessScopeKindToString(EObject eDataType, EObject instanceValue);
+	op EObject createOwnershipQosPolicyKindFromString(EObject eDataType, String initialValue);
+	op EObject convertOwnershipQosPolicyKindToString(EObject eDataType, EObject instanceValue);
+	op EObject createLivelinessQosPolicyKindFromString(EObject eDataType, String initialValue);
+	op EObject convertLivelinessQosPolicyKindToString(EObject eDataType, EObject instanceValue);
+	op EObject createDurabilityQosPolicyKindFromString(EObject eDataType, String initialValue);
+	op EObject convertDurabilityQosPolicyKindToString(EObject eDataType, EObject instanceValue);
+	op EObject createDestinationOrderQosPolicyKindFromString(EObject eDataType, String initialValue);
+	op EObject convertDestinationOrderQosPolicyKindToString(EObject eDataType, EObject instanceValue);
+	op EObject createHistoryQosPolicyKindFromString(EObject eDataType, String initialValue);
+	op EObject convertHistoryQosPolicyKindToString(EObject eDataType, EObject instanceValue);
+	op EObject getEnumerationsPackage();
+	op EObject getPackage();
+	val EnumerationsFactory[*] eINSTANCE;
+}
+
+class EnumerationsPackage {
+	op EObject init();
+	op EObject getPeriod();
+	op EObject getPeriod_Nanosecond();
+	op EObject getPeriod_Second();
+	op EObject getReliabilityQosPolicyKind();
+	op EObject getPresentationQosPolicyAccessScopeKind();
+	op EObject getOwnershipQosPolicyKind();
+	op EObject getLivelinessQosPolicyKind();
+	op EObject getDurabilityQosPolicyKind();
+	op EObject getDestinationOrderQosPolicyKind();
+	op EObject getHistoryQosPolicyKind();
+	op EObject getEnumerationsFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	op void createGenModelAnnotations();
+	attr String eNAME;
+	attr String eNS_URI;
+	attr String eNS_PREFIX;
+	attr int PERIOD;
+	attr int PERIOD__NANOSECOND;
+	attr int PERIOD__SECOND;
+	attr int PERIOD_FEATURE_COUNT;
+	attr int RELIABILITY_QOS_POLICY_KIND;
+	attr int PRESENTATION_QOS_POLICY_ACCESS_SCOPE_KIND;
+	attr int OWNERSHIP_QOS_POLICY_KIND;
+	attr int LIVELINESS_QOS_POLICY_KIND;
+	attr int DURABILITY_QOS_POLICY_KIND;
+	attr int DESTINATION_ORDER_QOS_POLICY_KIND;
+	attr int HISTORY_QOS_POLICY_KIND;
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+	val EnumerationsPackage[*] eINSTANCE;
+}
+
+abstract interface Literals {
+}
+
+enum OwnershipQosPolicyKind {
+	SHARED = 0;
+	EXCLUSIVE = 1;
+}
+
+enum HistoryQosPolicyKind {
+	KEEP_LAST = 0;
+	KEEP_ALL = 1;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class Period {
+	op EObject eStaticClass();
+	op EObject getNanosecond();
+	op void setNanosecond(EObject newNanosecond);
+	op EObject getSecond();
+	op void setSecond(EObject newSecond);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr long NANOSECOND_EDEFAULT;
+	attr long nanosecond;
+	attr int SECOND_EDEFAULT;
+	attr int second;
+}
+

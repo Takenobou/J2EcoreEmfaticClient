@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="output/statemachine//src" modelPluginID="output" modelName="statemachine" copyrightFields="false">
+  <foreignModel>statemachine.ecore</foreignModel>
+  <genPackages prefix="Statemachine" disposableProviderFactory="true">
+    <ecorePackage href="statemachine.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="statemachine.ecore#//StateMachine"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="statemachine.ecore#//StateMachine/declarations"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="statemachine.ecore#//StateMachine/machineVariables"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="statemachine.ecore#//StateMachine/printReachable"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="statemachine.ecore#//Declaration"/>
+      <genOperations>
+        <ecoreOperation href="statemachine.ecore#//Declaration/printReachable"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="statemachine.ecore#//Transition"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Transition/label"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Transition/sourceLabel"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Transition/targetLabel"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="statemachine.ecore#//Transition/source"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="statemachine.ecore#//Transition/target"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Transition/guardLabel"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Transition/actionLabel"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Transition/guardExpression"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Transition/actionStatement"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="statemachine.ecore#//State"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//State/label"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="statemachine.ecore#//State/successors"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="statemachine.ecore#//State/reachable"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//State/id"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="statemachine.ecore#//State/printReachable"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="statemachine.ecore#//Action"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Action/actionLabel"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//Action/actionStatement"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="statemachine.ecore#//StateMachineVariable"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//StateMachineVariable/type"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="statemachine.ecore#//StateMachineVariable/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="statemachine.ecore#//NormalState"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="statemachine.ecore#//NormalState/entry"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="statemachine.ecore#//InitialState"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="statemachine.ecore#//FinalState"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,31 @@
+@namespace(uri="courses", prefix="courses")
+package Courses;
+
+class Course {
+	attr String name;
+	val Person[*] members;
+	attr String ~id;
+	attr double credit;
+	val Assignment[*] assignments;
+}
+
+class Person {
+	attr String name;
+	attr int ~id;
+	attr String role;
+	ref Answer[*] assignmentDelivery;
+}
+
+class Assignment {
+	attr String name;
+	attr String description;
+	attr boolean mandatory;
+	val Answer[*] answer;
+}
+
+class Answer {
+	attr int ~id;
+	attr String text;
+	attr boolean pass;
+}
+

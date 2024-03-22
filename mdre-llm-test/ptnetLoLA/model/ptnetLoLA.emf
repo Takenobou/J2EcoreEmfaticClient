@@ -1,0 +1,90 @@
+@namespace(uri="http://www.informatik.hu-berlin.de/top/tools/editors/petrinets", prefix="ptnetLoLA")
+package ptnetLoLA;
+
+class Place extends Node {
+	attr int[1] token = 0;
+	volatile transient derived attr int[1] finalMarking = 0;
+}
+
+class PtNet {
+	val Place[*] places;
+	val Transition[*] transitions;
+	val Marking[1] initialMarking;
+	val Annotation annotation;
+	val Arc[*] arcs;
+	val Marking finalMarking;
+}
+
+class Transition extends Node {
+}
+
+class Node {
+	attr String name;
+	val Annotation annotation;
+	readonly derived ref Arc[*]#target incoming;
+	readonly derived ref Arc[*]#source outgoing;
+	attr NodeType[1] type = "0";
+}
+
+class Marking {
+	val RefMarkedPlace[*] places;
+}
+
+class PlaceReference {
+	ref Place[1] place;
+}
+
+class RefMarkedPlace extends PlaceReference {
+	attr int[1] token = 1;
+}
+
+class Annotation {
+	attr String text;
+}
+
+class Arc {
+	ref Node[1]#outgoing source;
+	ref Node[1]#incoming target;
+	attr int[1] weight = 1;
+}
+
+class ArcToPlace extends Arc {
+}
+
+class ArcToTransition extends Arc {
+}
+
+enum NodeType {
+	internal = 0;
+	input = 1;
+	output = 2;
+	inout = 3;
+}
+
+class TransitionExt extends Transition {
+	attr double probability = "1.0";
+	!unique attr int minTime = 0;
+	!unique attr double cost = "0";
+	attr int maxTime = 0;
+	attr Confidentiality confidentiality;
+}
+
+class PlaceExt extends Place {
+	attr double probability = "1.0";
+	attr boolean[1] isStart = False;
+}
+
+class ArcToPlaceExt extends ArcToPlace {
+	attr double probability = "1.0";
+}
+
+class ArcToTransitionExt extends ArcToTransition {
+	attr double probability = "1.0";
+}
+
+enum Confidentiality {
+	UNKNOWN = 0;
+	LOW = 1;
+	HIGH = 2;
+}
+

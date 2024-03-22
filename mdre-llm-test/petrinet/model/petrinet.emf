@@ -1,0 +1,30 @@
+@namespace(uri="http://mbse.compute.dtu.dk/petrinet", prefix="pn")
+package petrinet;
+
+class Petrinet {
+	attr String name;
+	val Node[*] nodes;
+	val Arc[*] arcs;
+}
+
+abstract class Node {
+	attr String name;
+	ref Arc[*]#target in;
+	ref Arc[*] out;
+}
+
+class Arc {
+	ref Node[1] source;
+	ref Node[1]#in target;
+}
+
+class Transition extends Node {
+}
+
+class Place extends Node {
+	val Token[*] tokens;
+}
+
+class Token {
+}
+

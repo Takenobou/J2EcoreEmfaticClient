@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="output/AttrTest//src" modelPluginID="output" modelName="AttrTest" copyrightFields="false">
+  <foreignModel>AttrTest.ecore</foreignModel>
+  <genPackages prefix="TestPackage" disposableProviderFactory="true">
+    <ecorePackage href="AttrTest.ecore#/"/>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="AttrTest.ecore#//TestEnum"/>
+    </genEnums>
+    <genDataTypes>
+      <ecoreDataType href="AttrTest.ecore#//TestDataType"/>
+    </genDataTypes>
+    <genClasses>
+      <ecoreClass href="AttrTest.ecore#//TestClass"/>
+      <genFeatures property="Readonly" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testStringAttr"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testRealAttr"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testBooleanAttr"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testIntAttr"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr1"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr2"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr3"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr4"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr5"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testUnlimitedNaturalAttr"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr6"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr7"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//TestClass/testAttr8"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="AttrTest.ecore#//TestInterface"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="AttrTest.ecore#//SuperClass"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="AttrTest.ecore#//UberClass"/>
+    </genClasses>
+    <nestedGenPackages prefix="SubPackage" disposableProviderFactory="true">
+      <ecorePackage href="AttrTest.ecore#//SubPackage"/>
+      <genEnums typeSafeEnumCompatible="false">
+        <ecoreEnum href="AttrTest.ecore#//SubPackage/SubTestEnum"/>
+      </genEnums>
+      <genDataTypes>
+        <ecoreDataType href="AttrTest.ecore#//SubPackage/SubTestDataType"/>
+      </genDataTypes>
+      <genClasses>
+        <ecoreClass href="AttrTest.ecore#//SubPackage/SubTestClass"/>
+        <genFeatures createChild="false">
+          <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//SubPackage/SubTestClass/testIntAttr"/>
+        </genFeatures>
+        <genFeatures createChild="false">
+          <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//SubPackage/SubTestClass/testStringAttr"/>
+        </genFeatures>
+        <genFeatures createChild="false">
+          <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//SubPackage/SubTestClass/testRealAttr"/>
+        </genFeatures>
+        <genFeatures createChild="false">
+          <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//SubPackage/SubTestClass/testBooleanAttr"/>
+        </genFeatures>
+        <genFeatures createChild="false">
+          <ecoreFeature xsi:type="ecore:EAttribute" href="AttrTest.ecore#//SubPackage/SubTestClass/testAttr"/>
+        </genFeatures>
+      </genClasses>
+      <genClasses image="false">
+        <ecoreClass href="AttrTest.ecore#//SubPackage/SubTestInterface"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

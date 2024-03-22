@@ -1,0 +1,271 @@
+@namespace(uri="https://www.example.org/java", prefix="java")
+package javaPackage;
+
+class ArgumentationPackage {
+	op EObject init();
+	op EObject getArgumentationFramework();
+	op EObject getArgumentationFramework_PersuadeeArgumentationFramework();
+	op EObject getArgumentationFramework_HasPersuader();
+	op EObject getArgumentationFramework_ID();
+	op EObject getArgumentationFramework_HasArgument();
+	op EObject getArgumentationFramework_HasTopic();
+	op EObject getPersuader();
+	op EObject getPersuader_HasArgumentationFramework();
+	op EObject getPersuader_ID();
+	op EObject getPersuader_PutsForward();
+	op EObject getArgument();
+	op EObject getArgument_Attacks();
+	op EObject getArgument_ID();
+	op EObject getArgument_AssertArgument();
+	op EObject getArgument_Name();
+	op EObject getPersuadee();
+	op EObject getPersuadee_HasPersuadeeArgumentationFramework();
+	op EObject getPersuadee_ID();
+	op EObject getPersuadeeArgumentationFramework();
+	op EObject getPersuadeeArgumentationFramework_HasArgument();
+	op EObject getPersuadeeArgumentationFramework_HasPersuadee();
+	op EObject getPersuadeeArgumentationFramework_ID();
+	op EObject getPersuadeeArgumentationFramework_AbsorbsArgument();
+	op EObject getArgumentationFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	attr String eNAME;
+	attr String eNS_URI;
+	attr String eNS_PREFIX;
+	attr int ARGUMENTATION_FRAMEWORK;
+	attr int ARGUMENTATION_FRAMEWORK__PERSUADEE_ARGUMENTATION_FRAMEWORK;
+	attr int ARGUMENTATION_FRAMEWORK__HAS_PERSUADER;
+	attr int ARGUMENTATION_FRAMEWORK__ID;
+	attr int ARGUMENTATION_FRAMEWORK__HAS_ARGUMENT;
+	attr int ARGUMENTATION_FRAMEWORK__HAS_TOPIC;
+	attr int ARGUMENTATION_FRAMEWORK_FEATURE_COUNT;
+	attr int PERSUADER;
+	attr int PERSUADER__HAS_ARGUMENTATION_FRAMEWORK;
+	attr int PERSUADER__ID;
+	attr int PERSUADER__PUTS_FORWARD;
+	attr int PERSUADER_FEATURE_COUNT;
+	attr int ARGUMENT;
+	attr int ARGUMENT__ATTACKS;
+	attr int ARGUMENT__ID;
+	attr int ARGUMENT__ASSERT_ARGUMENT;
+	attr int ARGUMENT__NAME;
+	attr int ARGUMENT_FEATURE_COUNT;
+	attr int PERSUADEE;
+	attr int PERSUADEE__HAS_PERSUADEE_ARGUMENTATION_FRAMEWORK;
+	attr int PERSUADEE__ID;
+	attr int PERSUADEE_FEATURE_COUNT;
+	attr int PERSUADEE_ARGUMENTATION_FRAMEWORK;
+	attr int PERSUADEE_ARGUMENTATION_FRAMEWORK__HAS_ARGUMENT;
+	attr int PERSUADEE_ARGUMENTATION_FRAMEWORK__HAS_PERSUADEE;
+	attr int PERSUADEE_ARGUMENTATION_FRAMEWORK__ID;
+	attr int PERSUADEE_ARGUMENTATION_FRAMEWORK__ABSORBS_ARGUMENT;
+	attr int PERSUADEE_ARGUMENTATION_FRAMEWORK_FEATURE_COUNT;
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+	val ArgumentationPackage[*] eINSTANCE;
+}
+
+abstract interface Literals {
+}
+
+@Override
+@Deprecated
+class ArgumentationFactory {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createArgumentationFramework();
+	op EObject createPersuader();
+	op EObject createArgument();
+	op EObject createPersuadee();
+	op EObject createPersuadeeArgumentationFramework();
+	op EObject getArgumentationPackage();
+	op EObject getPackage();
+	val ArgumentationFactory[*]#INSTANCE eINSTANCE;
+	val ArgumentationFactory[*]#eINSTANCE INSTANCE;
+}
+
+@Override
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+class Argument {
+	op EObject eStaticClass();
+	op EObject getAttacks();
+	op EObject getID();
+	op void setID(EObject newID);
+	op EObject getAssertArgument();
+	op EObject basicGetAssertArgument();
+	op EObject basicSetAssertArgument(EObject newAssertArgument, EObject msgs);
+	op void setAssertArgument(EObject newAssertArgument);
+	op EObject getName();
+	op void setName(String newName);
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int ID_EDEFAULT;
+	attr int ~id;
+	attr String NAME_EDEFAULT;
+	attr String name;
+}
+
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+class PersuadeeArgumentationFramework {
+	op EObject eStaticClass();
+	op EObject getHasArgument();
+	op EObject getHasPersuadee();
+	op EObject basicSetHasPersuadee(EObject newHasPersuadee, EObject msgs);
+	op void setHasPersuadee(EObject newHasPersuadee);
+	op EObject getID();
+	op void setID(EObject newID);
+	op EObject getAbsorbsArgument();
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int ID_EDEFAULT;
+	attr int ~id;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+class Persuader {
+	op EObject eStaticClass();
+	op EObject getHasArgumentationFramework();
+	op EObject basicSetHasArgumentationFramework(EObject newHasArgumentationFramework, EObject msgs);
+	op void setHasArgumentationFramework(EObject newHasArgumentationFramework);
+	op EObject getID();
+	op void setID(EObject newID);
+	op EObject getPutsForward();
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eBasicRemoveFromContainerFeature(EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int ID_EDEFAULT;
+	attr int ~id;
+}
+
+@Override
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+class ArgumentationFramework {
+	op EObject eStaticClass();
+	op EObject getPersuadeeArgumentationFramework();
+	op EObject getHasPersuader();
+	op EObject basicSetHasPersuader(EObject newHasPersuader, EObject msgs);
+	op void setHasPersuader(EObject newHasPersuader);
+	op EObject getID();
+	op void setID(EObject newID);
+	op EObject getHasArgument();
+	op EObject getHasTopic();
+	op EObject basicGetHasTopic();
+	op void setHasTopic(EObject newHasTopic);
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int ID_EDEFAULT;
+	attr int ~id;
+	val Persuader[*] hasPersuader;
+	val Argument[*] hasTopic;
+}
+
+@Override
+@Override
+class ArgumentationAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createArgumentationFrameworkAdapter();
+	op EObject createPersuaderAdapter();
+	op EObject createArgumentAdapter();
+	op EObject createPersuadeeAdapter();
+	op EObject createPersuadeeArgumentationFrameworkAdapter();
+	op EObject createEObjectAdapter();
+	val ArgumentationPackage[*] modelPackage;
+}
+
+@Override
+@Override
+@Override
+class ArgumentationSwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject caseArgumentationFramework(EObject object);
+	op EObject casePersuader(EObject object);
+	op EObject caseArgument(EObject object);
+	op EObject casePersuadee(EObject object);
+	op EObject casePersuadeeArgumentationFramework(EObject object);
+	op EObject defaultCase(EObject object);
+	val ArgumentationPackage[*] modelPackage;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class Persuadee {
+	op EObject eStaticClass();
+	op EObject getHasPersuadeeArgumentationFramework();
+	op EObject basicSetHasPersuadeeArgumentationFramework(EObject newHasPersuadeeArgumentationFramework, EObject msgs);
+	op void setHasPersuadeeArgumentationFramework(EObject newHasPersuadeeArgumentationFramework);
+	op EObject getID();
+	op void setID(EObject newID);
+	op EObject eInverseAdd(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eBasicRemoveFromContainerFeature(EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int ID_EDEFAULT;
+	attr int ~id;
+}
+

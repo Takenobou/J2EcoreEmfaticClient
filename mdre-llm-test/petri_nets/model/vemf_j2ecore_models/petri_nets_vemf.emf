@@ -1,0 +1,172 @@
+@namespace(uri="https://www.example.org/java", prefix="java")
+package javaPackage;
+
+@Override
+@Deprecated
+class PetriFactoryImpl {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createPetriNet();
+	op EObject createPlace();
+	op EObject createTransition();
+	op EObject getPetriPackage();
+	op EObject getPackage();
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class NamedElementImpl {
+	op EObject eStaticClass();
+	op EObject getName();
+	op void setName(String newName);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String NAME_EDEFAULT;
+	attr String name;
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class PlaceImpl extends NamedElementImpl {
+	op EObject eStaticClass();
+	op EObject getTokens();
+	op void setTokens(EObject newTokens);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int TOKENS_EDEFAULT;
+	attr int tokens;
+}
+
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+class TransitionImpl extends NamedElementImpl {
+	op EObject eStaticClass();
+	op EObject getIn();
+	op EObject getOut();
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+}
+
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+class PetriNetImpl {
+	op EObject eStaticClass();
+	op EObject getElems();
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+}
+
+class PetriPackageImpl {
+	op EObject init();
+	op EObject getPetriNet();
+	op EObject getPetriNet_Elems();
+	op EObject getNamedElement();
+	op EObject getNamedElement_Name();
+	op EObject getPlace();
+	op EObject getPlace_Tokens();
+	op EObject getTransition();
+	op EObject getTransition_In();
+	op EObject getTransition_Out();
+	op EObject getPetriFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+}
+
+abstract interface Transition {
+	op EObject getIn();
+	op EObject getOut();
+}
+
+@Override
+@Override
+class PetriAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createPetriNetAdapter();
+	op EObject createNamedElementAdapter();
+	op EObject createPlaceAdapter();
+	op EObject createTransitionAdapter();
+	op EObject createEObjectAdapter();
+}
+
+@Override
+@Override
+@Override
+class PetriSwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject casePetriNet(EObject object);
+	op EObject caseNamedElement(EObject object);
+	op EObject casePlace(EObject object);
+	op EObject caseTransition(EObject object);
+	op EObject defaultCase(EObject object);
+}
+
+abstract interface Place {
+	op EObject getTokens();
+	op void setTokens(EObject value);
+}
+
+abstract interface PetriNet {
+	op EObject getElems();
+}
+
+abstract interface NamedElement {
+	op EObject getName();
+	op void setName(String value);
+}
+
+abstract interface PetriFactory {
+	op EObject createPetriNet();
+	op EObject createPlace();
+	op EObject createTransition();
+	op EObject getPetriPackage();
+}
+
+abstract interface PetriPackage {
+	op EObject getPetriNet();
+	op EObject getPetriNet_Elems();
+	op EObject getNamedElement();
+	op EObject getNamedElement_Name();
+	op EObject getPlace();
+	op EObject getPlace_Tokens();
+	op EObject getTransition();
+	op EObject getTransition_In();
+	op EObject getTransition_Out();
+	op EObject getPetriFactory();
+}
+
+abstract interface Literals {
+}
+

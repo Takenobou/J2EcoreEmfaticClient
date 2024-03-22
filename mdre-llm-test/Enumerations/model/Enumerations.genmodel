@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="output/Enumerations//src" modelPluginID="output" modelName="Enumerations" copyrightFields="false">
+  <foreignModel>Enumerations.ecore</foreignModel>
+  <genPackages prefix="Enumerations" disposableProviderFactory="true">
+    <ecorePackage href="Enumerations.ecore#/"/>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="Enumerations.ecore#//ReliabilityQosPolicyKind"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//ReliabilityQosPolicyKind/BEST_EFFORT"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//ReliabilityQosPolicyKind/RELIABLE"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="Enumerations.ecore#//PresentationQosPolicyAccessScopeKind"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//PresentationQosPolicyAccessScopeKind/INSTANCE"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//PresentationQosPolicyAccessScopeKind/TOPIC"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//PresentationQosPolicyAccessScopeKind/GROUP"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="Enumerations.ecore#//OwnershipQosPolicyKind"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//OwnershipQosPolicyKind/SHARED"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//OwnershipQosPolicyKind/EXCLUSIVE"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="Enumerations.ecore#//LivelinessQosPolicyKind"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//LivelinessQosPolicyKind/AUTOMATIC"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//LivelinessQosPolicyKind/MANUAL_BY_PARTICIPANT"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//LivelinessQosPolicyKind/MANUAL_BY_TOPIC"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="Enumerations.ecore#//DurabilityQosPolicyKind"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//DurabilityQosPolicyKind/TRANSIENT"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//DurabilityQosPolicyKind/TRANSIENT_LOCAL"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//DurabilityQosPolicyKind/VOLATILE"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//DurabilityQosPolicyKind/PERSISTENT"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="Enumerations.ecore#//DestinationOrderQosPolicyKind"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//DestinationOrderQosPolicyKind/BY_RECEPTION_TIMESTAMP"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//DestinationOrderQosPolicyKind/BY_SOURCE_TIMESTAMP"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="Enumerations.ecore#//HistoryQosPolicyKind"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//HistoryQosPolicyKind/KEEP_LAST"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="Enumerations.ecore#//HistoryQosPolicyKind/KEEP_ALL"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genClasses>
+      <ecoreClass href="Enumerations.ecore#//Period"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="Enumerations.ecore#//Period/nanosecond"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="Enumerations.ecore#//Period/second"/>
+      </genFeatures>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

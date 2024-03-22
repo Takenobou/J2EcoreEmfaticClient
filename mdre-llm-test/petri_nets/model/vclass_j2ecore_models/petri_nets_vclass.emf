@@ -1,0 +1,153 @@
+@namespace(uri="https://www.example.org/java", prefix="java")
+package javaPackage;
+
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+class Transition {
+	op EObject eStaticClass();
+	op EObject getIn();
+	op EObject getOut();
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+}
+
+@Override
+@Override
+class PetriAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createPetriNetAdapter();
+	op EObject createNamedElementAdapter();
+	op EObject createPlaceAdapter();
+	op EObject createTransitionAdapter();
+	op EObject createEObjectAdapter();
+}
+
+@Override
+@Override
+@Override
+class PetriSwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject casePetriNet(EObject object);
+	op EObject caseNamedElement(EObject object);
+	op EObject casePlace(EObject object);
+	op EObject caseTransition(EObject object);
+	op EObject defaultCase(EObject object);
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class Place {
+	op EObject eStaticClass();
+	op EObject getTokens();
+	op void setTokens(EObject newTokens);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int TOKENS_EDEFAULT;
+	attr int tokens;
+}
+
+@Override
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+class PetriNet {
+	op EObject eStaticClass();
+	op EObject getElems();
+	op EObject eInverseRemove(EObject otherEnd, EObject featureID, EObject msgs);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class NamedElement {
+	op EObject eStaticClass();
+	op EObject getName();
+	op void setName(String newName);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String NAME_EDEFAULT;
+	attr String name;
+}
+
+@Override
+@Deprecated
+class PetriFactory {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createPetriNet();
+	op EObject createPlace();
+	op EObject createTransition();
+	op EObject getPetriPackage();
+	op EObject getPackage();
+	val PetriFactory[*] eINSTANCE;
+}
+
+class PetriPackage {
+	op EObject init();
+	op EObject getPetriNet();
+	op EObject getPetriNet_Elems();
+	op EObject getNamedElement();
+	op EObject getNamedElement_Name();
+	op EObject getPlace();
+	op EObject getPlace_Tokens();
+	op EObject getTransition();
+	op EObject getTransition_In();
+	op EObject getTransition_Out();
+	op EObject getPetriFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	attr String eNAME;
+	attr String eNS_URI;
+	attr String eNS_PREFIX;
+	attr int PETRI_NET;
+	attr int PETRI_NET__ELEMS;
+	attr int PETRI_NET_FEATURE_COUNT;
+	attr int NAMED_ELEMENT;
+	attr int NAMED_ELEMENT__NAME;
+	attr int NAMED_ELEMENT_FEATURE_COUNT;
+	attr int PLACE;
+	attr int PLACE__NAME;
+	attr int PLACE__TOKENS;
+	attr int PLACE_FEATURE_COUNT;
+	attr int TRANSITION;
+	attr int TRANSITION__NAME;
+	attr int TRANSITION__IN;
+	attr int TRANSITION__OUT;
+	attr int TRANSITION_FEATURE_COUNT;
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+	val PetriPackage[*] eINSTANCE;
+}
+
+abstract interface Literals {
+}
+

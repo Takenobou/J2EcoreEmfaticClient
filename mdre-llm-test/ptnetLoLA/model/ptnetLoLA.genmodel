@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="output/ptnetLoLA//src" modelPluginID="output" modelName="ptnetLoLA" copyrightFields="false">
+  <foreignModel>ptnetLoLA.ecore</foreignModel>
+  <genPackages prefix="PtnetLoLA" disposableProviderFactory="true">
+    <ecorePackage href="ptnetLoLA.ecore#/"/>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="ptnetLoLA.ecore#//NodeType"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="ptnetLoLA.ecore#//NodeType/internal"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="ptnetLoLA.ecore#//NodeType/input"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="ptnetLoLA.ecore#//NodeType/output"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="ptnetLoLA.ecore#//NodeType/inout"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="ptnetLoLA.ecore#//Confidentiality"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="ptnetLoLA.ecore#//Confidentiality/UNKNOWN"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="ptnetLoLA.ecore#//Confidentiality/LOW"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="ptnetLoLA.ecore#//Confidentiality/HIGH"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//Place"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//Place/token"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//Place/finalMarking"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//PtNet"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//PtNet/places"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//PtNet/transitions"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//PtNet/initialMarking"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//PtNet/annotation"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//PtNet/arcs"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//PtNet/finalMarking"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//Transition"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//Node"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//Node/name"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//Node/annotation"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//Node/incoming"/>
+      </genFeatures>
+      <genFeatures property="Readonly" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//Node/outgoing"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//Node/type"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//Marking"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//Marking/places"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//PlaceReference"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//PlaceReference/place"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//RefMarkedPlace"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//RefMarkedPlace/token"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//Annotation"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//Annotation/text"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//Arc"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//Arc/source"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ptnetLoLA.ecore#//Arc/target"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//Arc/weight"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//ArcToPlace"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//ArcToTransition"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//TransitionExt"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//TransitionExt/probability"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//TransitionExt/minTime"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//TransitionExt/cost"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//TransitionExt/maxTime"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//TransitionExt/confidentiality"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//PlaceExt"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//PlaceExt/probability"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//PlaceExt/isStart"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//ArcToPlaceExt"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//ArcToPlaceExt/probability"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ptnetLoLA.ecore#//ArcToTransitionExt"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ptnetLoLA.ecore#//ArcToTransitionExt/probability"/>
+      </genFeatures>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,287 @@
+@namespace(uri="https://www.example.org/java", prefix="java")
+package javaPackage;
+
+@Override
+class SuperClass {
+	op EObject eStaticClass();
+}
+
+@Override
+@Override
+@SuppressWarnings
+@Override
+@Override
+@Override
+@Override
+class TestClass extends SuperClass {
+	op EObject eStaticClass();
+	op EObject getTestAttr();
+	op EObject isSetTestAttr();
+	op EObject getTestStringAttr();
+	op void setTestStringAttr(String newTestStringAttr);
+	op EObject getTestRealAttr();
+	op void setTestRealAttr(EObject newTestRealAttr);
+	op EObject isTestBooleanAttr();
+	op void setTestBooleanAttr(EObject newTestBooleanAttr);
+	op EObject getTestIntAttr();
+	op void setTestIntAttr(EObject newTestIntAttr);
+	op EObject getTestAttr1();
+	op void setTestAttr1(EObject newTestAttr1);
+	op EObject getTestAttr2();
+	op EObject getTestAttr3();
+	op EObject getTestAttr4();
+	op EObject getTestAttr5();
+	op void setTestAttr5(EObject newTestAttr5);
+	op EObject getTestUnlimitedNaturalAttr();
+	op void setTestUnlimitedNaturalAttr(EObject newTestUnlimitedNaturalAttr);
+	op EObject getTestAttr6();
+	op EObject getTestAttr7();
+	op EObject getTestAttr8();
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr String TEST_STRING_ATTR_EDEFAULT;
+	attr String testStringAttr;
+	attr boolean TEST_BOOLEAN_ATTR_EDEFAULT;
+	attr int TEST_INT_ATTR_EDEFAULT;
+	attr int testIntAttr;
+	attr int TEST_ATTR1_EDEFAULT;
+	attr int testAttr1;
+	attr int TEST_ATTR5_EDEFAULT;
+	attr int testAttr5;
+}
+
+@Override
+@Override
+@Override
+class TestPackageSwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject caseTestClass(EObject object);
+	op EObject caseTestInterface(EObject object);
+	op EObject caseSuperClass(EObject object);
+	op EObject caseUberClass(EObject object);
+	op EObject defaultCase(EObject object);
+}
+
+@Override
+@Override
+class TestPackageAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createTestClassAdapter();
+	op EObject createTestInterfaceAdapter();
+	op EObject createSuperClassAdapter();
+	op EObject createUberClassAdapter();
+	op EObject createEObjectAdapter();
+}
+
+enum TestEnum {
+}
+
+@Override
+@Override
+class SubPackageAdapterFactory {
+	op EObject isFactoryForType(EObject object);
+	op EObject createAdapter(EObject target);
+	op EObject createSubTestClassAdapter();
+	op EObject createSubTestInterfaceAdapter();
+	op EObject createEObjectAdapter();
+}
+
+@Override
+@Override
+@Override
+class SubPackageSwitch {
+	op EObject isSwitchFor(EObject ePackage);
+	op EObject doSwitch(EObject classifierID, EObject theEObject);
+	op EObject caseSubTestClass(EObject object);
+	op EObject caseSubTestInterface(EObject object);
+	op EObject defaultCase(EObject object);
+}
+
+enum SubTestEnum {
+}
+
+@Override
+@Override
+@Override
+@Deprecated
+class SubPackageFactory {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createFromString(EObject eDataType, String initialValue);
+	op EObject convertToString(EObject eDataType, EObject instanceValue);
+	op EObject createSubTestClass();
+	op EObject createSubTestEnumFromString(EObject eDataType, String initialValue);
+	op EObject convertSubTestEnumToString(EObject eDataType, EObject instanceValue);
+	op EObject createSubTestDataTypeFromString(EObject eDataType, String initialValue);
+	op EObject convertSubTestDataTypeToString(EObject eDataType, EObject instanceValue);
+	op EObject getSubPackagePackage();
+	op EObject getPackage();
+	val SubPackageFactory[*] eINSTANCE;
+}
+
+class SubPackagePackage {
+	op EObject init();
+	op EObject getSubTestClass();
+	op EObject getSubTestClass_TestIntAttr();
+	op EObject getSubTestClass_TestStringAttr();
+	op EObject getSubTestClass_TestRealAttr();
+	op EObject getSubTestClass_TestBooleanAttr();
+	op EObject getSubTestClass_TestAttr();
+	op EObject getSubTestInterface();
+	op EObject getSubTestEnum();
+	op EObject getSubTestDataType();
+	op EObject getSubPackageFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	attr String eNAME;
+	attr String eNS_URI;
+	attr String eNS_PREFIX;
+	attr int SUB_TEST_CLASS;
+	attr int SUB_TEST_CLASS__TEST_INT_ATTR;
+	attr int SUB_TEST_CLASS__TEST_STRING_ATTR;
+	attr int SUB_TEST_CLASS__TEST_REAL_ATTR;
+	attr int SUB_TEST_CLASS__TEST_BOOLEAN_ATTR;
+	attr int SUB_TEST_CLASS__TEST_ATTR;
+	attr int SUB_TEST_CLASS_FEATURE_COUNT;
+	attr int SUB_TEST_INTERFACE;
+	attr int SUB_TEST_INTERFACE_FEATURE_COUNT;
+	attr int SUB_TEST_ENUM;
+	attr int SUB_TEST_DATA_TYPE;
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+	val SubPackagePackage[*] eINSTANCE;
+}
+
+abstract interface Literals {
+}
+
+abstract interface SubTestInterface {
+}
+
+@Override
+@Override
+@Override
+@Override
+@Override
+@Override
+class SubTestClass {
+	op EObject eStaticClass();
+	op EObject getTestIntAttr();
+	op void setTestIntAttr(EObject newTestIntAttr);
+	op EObject getTestStringAttr();
+	op void setTestStringAttr(String newTestStringAttr);
+	op EObject getTestRealAttr();
+	op void setTestRealAttr(EObject newTestRealAttr);
+	op EObject isTestBooleanAttr();
+	op void setTestBooleanAttr(EObject newTestBooleanAttr);
+	op EObject getTestAttr();
+	op void setTestAttr(EObject newTestAttr);
+	op EObject eGet(EObject featureID, EObject ~resolve, EObject coreType);
+	op void eSet(EObject featureID, EObject newValue);
+	op void eUnset(EObject featureID);
+	op EObject eIsSet(EObject featureID);
+	op EObject toString();
+	attr int TEST_INT_ATTR_EDEFAULT;
+	attr int testIntAttr;
+	attr String TEST_STRING_ATTR_EDEFAULT;
+	attr String testStringAttr;
+	attr boolean TEST_BOOLEAN_ATTR_EDEFAULT;
+}
+
+@Override
+@Override
+@Override
+@Deprecated
+class TestPackageFactory {
+	op EObject init();
+	op EObject create(EObject eClass);
+	op EObject createFromString(EObject eDataType, String initialValue);
+	op EObject convertToString(EObject eDataType, EObject instanceValue);
+	op EObject createTestClass();
+	op EObject createTestEnumFromString(EObject eDataType, String initialValue);
+	op EObject convertTestEnumToString(EObject eDataType, EObject instanceValue);
+	op EObject getTestPackagePackage();
+	op EObject getPackage();
+	val TestPackageFactory[*] eINSTANCE;
+}
+
+class TestPackagePackage {
+	op EObject init();
+	op EObject getTestClass();
+	op EObject getTestClass_TestAttr();
+	op EObject getTestClass_TestStringAttr();
+	op EObject getTestClass_TestRealAttr();
+	op EObject getTestClass_TestBooleanAttr();
+	op EObject getTestClass_TestIntAttr();
+	op EObject getTestClass_TestAttr1();
+	op EObject getTestClass_TestAttr2();
+	op EObject getTestClass_TestAttr3();
+	op EObject getTestClass_TestAttr4();
+	op EObject getTestClass_TestAttr5();
+	op EObject getTestClass_TestUnlimitedNaturalAttr();
+	op EObject getTestClass_TestAttr6();
+	op EObject getTestClass_TestAttr7();
+	op EObject getTestClass_TestAttr8();
+	op EObject getTestInterface();
+	op EObject getSuperClass();
+	op EObject getUberClass();
+	op EObject getTestEnum();
+	op EObject getTestDataType();
+	op EObject getTestPackageFactory();
+	op void createPackageContents();
+	op void initializePackageContents();
+	op void createImportAnnotations();
+	op void createVisibilityAnnotations();
+	op void createDerivationAnnotations();
+	op void createStaticAnnotations();
+	op void createModelAnnotations();
+	op void createGhostAnnotations();
+	op void createNullableAnnotations();
+	op void createPrimitiveAnnotations();
+	attr String eNAME;
+	attr String eNS_URI;
+	attr String eNS_PREFIX;
+	attr int SUPER_CLASS;
+	attr int SUPER_CLASS_FEATURE_COUNT;
+	attr int TEST_CLASS;
+	attr int TEST_CLASS__TEST_ATTR;
+	attr int TEST_CLASS__TEST_STRING_ATTR;
+	attr int TEST_CLASS__TEST_REAL_ATTR;
+	attr int TEST_CLASS__TEST_BOOLEAN_ATTR;
+	attr int TEST_CLASS__TEST_INT_ATTR;
+	attr int TEST_CLASS__TEST_ATTR1;
+	attr int TEST_CLASS__TEST_ATTR2;
+	attr int TEST_CLASS__TEST_ATTR3;
+	attr int TEST_CLASS__TEST_ATTR4;
+	attr int TEST_CLASS__TEST_ATTR5;
+	attr int TEST_CLASS__TEST_UNLIMITED_NATURAL_ATTR;
+	attr int TEST_CLASS__TEST_ATTR6;
+	attr int TEST_CLASS__TEST_ATTR7;
+	attr int TEST_CLASS__TEST_ATTR8;
+	attr int TEST_CLASS_FEATURE_COUNT;
+	attr int TEST_INTERFACE;
+	attr int TEST_INTERFACE_FEATURE_COUNT;
+	attr int UBER_CLASS;
+	attr int UBER_CLASS_FEATURE_COUNT;
+	attr int TEST_ENUM;
+	attr int TEST_DATA_TYPE;
+	attr boolean isInited;
+	attr boolean isCreated;
+	attr boolean isInitialized;
+	val TestPackagePackage[*] eINSTANCE;
+}
+
+abstract interface Literals {
+}
+
+@Override
+class UberClass {
+	op EObject eStaticClass();
+}
+

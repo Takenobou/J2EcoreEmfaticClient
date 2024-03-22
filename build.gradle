@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url 'file:///Users/alexmartin/.m2/repository/'
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.github.javaparser:javaparser-core:3.25.8'
+    implementation 'org.eclipse.emfatic:org.eclipse.emfatic.core:1.0.0'
+    implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation 'org.eclipse.emf:org.eclipse.emf.ecore:2.33.0'
+    implementation 'org.eclipse.emf:org.eclipse.emf.codegen.ecore:2.33.0'
+    implementation 'org.eclipse.emf:org.eclipse.emf.common:2.26.0'
+    implementation 'org.xerial:sqlite-jdbc:3.34.0'
+    implementation "org.eclipse.xtend:org.eclipse.xtend.core:2.31.0"
+    implementation 'org.eclipse.emf:org.eclipse.emf.common:2.28.0'
+    implementation "org.eclipse.emf:org.eclipse.emf.ecore.xmi:2.17.0"
+    implementation "org.eclipse.emf:org.eclipse.emf.ecore.change:2.14.0"
+    implementation "log4j:log4j:1.2.17"
+    implementation 'org.aspectj:aspectjweaver:1.9.19'
+    implementation 'org.springframework:spring-aop:6.0.9'
+    implementation 'org.springframework:spring-context:6.0.9'
+    implementation 'net.openhft:zero-allocation-hashing:0.16'
+    implementation 'org.json:json:20171018'
+    implementation 'aam65.j2ecore:j2ecore:0.1.0'
+}
+
+test {
+    useJUnitPlatform()
+}
